@@ -23,7 +23,9 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
+    width: 100%;
+
+ 
 }
 
 
@@ -107,3 +109,60 @@ body{
     color: white;
     font-size: 2rem;
 }
+
+
+
+
+@media screen and (max-width:786px){
+        #total_cont{
+            flex-direction: column;
+            justify-content: center;
+        }
+
+      
+}  
+
+@media screen and (max-width:576px){
+ 
+
+    .container{
+        width: 400px;
+        height: 400px;
+        margin: 0 auto;
+    }
+
+    .check{
+       
+        width: 19px;
+        height: 19px
+    }
+    #info{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #count_points{
+     
+        font-size: 2rem;
+    }
+    
+    #timing{
+      
+        font-size: 2rem;
+    }
+
+    #description{
+        font-size: 1.5rem;
+        padding-right: 0rem;
+    }
+
+    #description img{
+   
+        width: 200px;
+}
+
+#total_cont{
+    padding-bottom: 20px;
+}
+    
+} 

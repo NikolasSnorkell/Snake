@@ -37,7 +37,7 @@ storage();
    })
 // }, 300);
 
-
+// console.log(($(".check")).length);
 
 function snake() {
 
