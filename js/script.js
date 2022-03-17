@@ -40,7 +40,7 @@ storage();
     let name = e.target.id;
  
     name = name.slice(3,)
-
+console.log(name);
    
      if(start==0){
        snake();
@@ -50,7 +50,7 @@ storage();
        $("#count_points").html(points+" points");
      }
   
-   way=name;
+     keys(+name);
 
    
 
