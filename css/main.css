@@ -120,7 +120,7 @@ body{
 #mobile_field{
     min-width:400px ;
     width: 100%;
-    height: 200px;
+   
     padding-top:20px ;
  
    
@@ -130,7 +130,9 @@ body{
 #mobile_field div img{
         width: 30%;
 }
-
+#mobile_field div img:hover{
+    cursor: pointer;
+}
 #mobile_field div{
     display: flex;
     justify-content: center;

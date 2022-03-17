@@ -36,13 +36,12 @@ storage();
 
    })
 
-
    $(".arrows_mobile").on("click", function(e){
     let name = e.target.id;
  
     name = name.slice(3,)
 
-    console.log(name);
+   
      if(start==0){
        snake();
        secondomer();
@@ -56,6 +55,7 @@ storage();
    
 
    })
+
 
 
 
