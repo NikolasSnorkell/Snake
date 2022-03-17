@@ -118,7 +118,7 @@ body{
 
 
 #mobile_field{
-    min-width:400px ;
+    min-width:300px ;
     width: 100%;
    
     padding-top:20px ;
@@ -128,7 +128,7 @@ body{
 
 }
 #mobile_field div img{
-        width: 30%;
+        width: 20%;
 }
 #mobile_field div img:hover{
     cursor: pointer;
@@ -202,10 +202,7 @@ body{
         padding-right: 0rem;
     }
 
-    #description img{
-   
-        width: 200px;
-}
+
 
 #total_cont{
     padding-bottom: 20px;
