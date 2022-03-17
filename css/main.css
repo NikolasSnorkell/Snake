@@ -27,11 +27,14 @@ body{
 
  
 }
-
+#field{
+    order: 2;
+}
 
 .container{
     display: flex;
     flex-wrap: wrap;
+    
 
     width: 480px;
     height: 500px;
@@ -59,6 +62,7 @@ body{
     display: flex;
     justify-content: space-between;
     width: 480px;
+   
 }
 
 #count_points{
@@ -81,6 +85,7 @@ body{
     color: white;
     font-size: 2rem;
     padding-right: 3rem;
+    order: 2;
 }
 
 #description img{
@@ -97,6 +102,7 @@ body{
     border: 1px solid yellow;
     height: 300px;
     padding: 1rem 2rem;
+    order: 2;
 }
 
 #record_title{
@@ -111,6 +117,25 @@ body{
 }
 
 
+#mobile_field{
+    min-width:400px ;
+    width: 100%;
+    height: 200px;
+    padding-top:20px ;
+ 
+   
+    display: none;
+
+}
+#mobile_field div img{
+        width: 30%;
+}
+
+#mobile_field div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
 
 @media screen and (max-width:786px){
@@ -118,7 +143,26 @@ body{
             flex-direction: column;
             justify-content: center;
         }
+        #records{
+            order: 3;
+        }
 
+        #description>img{
+   
+            visibility: hidden;
+    }
+
+    #description p.btns_txt{
+        visibility: hidden;
+    }
+
+        #mobile_field{
+          
+           display: flex;
+           flex-direction: column;
+
+            
+        }
       
 }  
 

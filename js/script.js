@@ -35,9 +35,31 @@ storage();
    
 
    })
-// }, 300);
 
-// console.log(($(".check")).length);
+
+   $(".arrows_mobile").on("click", function(e){
+    let name = e.target.id;
+ 
+    name = name.slice(3,)
+
+    console.log(name);
+     if(start==0){
+       snake();
+       secondomer();
+       start=1;
+       points=0;
+       $("#count_points").html(points+" points");
+     }
+  
+   way=name;
+
+   
+
+   })
+
+
+
+
 
 function snake() {
 
@@ -279,3 +301,6 @@ function keys(code){
 
     //  console.log(localStorage.getItem('time')) 
     //  console.log(localStorage.getItem('points')) 
+
+     
+    
