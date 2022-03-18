@@ -1,3 +1,14 @@
+
+
+    let backaudio = document.getElementById("back_sound");
+    backaudio.volume = 0.5;
+
+
+
+
+
+
+
 let row_max = 15;
 let col_max = 15;
 
@@ -25,6 +36,39 @@ let current_row = 7, // current position vertical
 let timing0; // output string for timer
 let secondMer, move; // intervals
 let record_point=0, record_time="0:00:000";
+
+
+let game_over_sound = new Audio('sounds/game_over.mp3');
+let eating_sound = new Audio('sounds/eating.wav');
+let new_record = new Audio('sounds/new_record.mp3');
+
+
+
+
+
+$(".image_volume").click(function(){
+
+  if($(this).attr("src")=="images/sound_on.png") {
+     $(this).attr("src","images/sound_off.png");
+     backaudio.volume = 0;
+      // if(this.id=="image_music"){
+      //   audio.volume = 0;
+      // }
+
+  } else {
+    $(this).attr("src","images/sound_on.png");
+    backaudio.volume = 0.5;
+  }
+
+
+
+
+})
+
+
+
+
+
 
 // loading record data from local storage
 
@@ -176,6 +220,8 @@ function randomize(){
 function eating(elem){
   
           if($(elem).prop("checked") == true){
+            eating_sound.play();
+
             $(elem).toggleClass("food");
             food=0;
             points++;
@@ -283,6 +329,8 @@ function keys(code){
 
     function game_over(){
 
+      game_over_sound.play();
+
               alert("Game over");
               fail=0;
               sLength=3;
@@ -298,6 +346,8 @@ function keys(code){
                 record_time=timing0;
 
                 storage("add");
+
+                new_record.play();
       }
 
 

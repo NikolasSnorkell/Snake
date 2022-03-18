@@ -8,6 +8,9 @@
     <title>Snake</title>
   </head>
   <body>
+    <audio autoplay preload="auto" src="sounds/back.mp3" id="back_sound" type="audio/mp3"   loop > </audio>
+
+
     <div id="total_cont">
       <div id="field">
             <div id="info">
@@ -20,11 +23,27 @@
             
             </div>
       </div>
-      <div id="records">
-        <p id="record_title">Record</p>
-        <p id="record_output">0 points <br>during <br> 0:00:00</p>
-      </div>
+      <div id="mid_block">
+          <div id="sound_control">
+            <div id="music" class="controls">
+              <p>Music</p>
+              <img src="images/sound_on.png" class="image_volume" id="image_music" alt="">
+            </div>
+            <!-- <div id="sounds" class="controls">
+              <p>Sounds</p>
+              <img src="images/sound_on.png" class="image_volume" id="image_sound" alt="">
+            </div> -->
+           
+          </div>
 
+          <div id="records">
+            <p id="record_title">Record</p>
+            <p id="record_output">0 points <br>during <br> 0:00:00</p>
+          </div>
+    </div>
+
+
+     
 
       <div id="description">
         <div id="mobile_field">
@@ -39,7 +58,7 @@
         <p class="btns_txt">Use this buttons to control the snake.</p>
         <p>Press any of this button to <span style="color: orange;"> START</span>.</p>
         <br>
-        <p><span style="color: rgb(0, 183, 255);">Known bugs:</span> <br>If you suddenly change direction in <br> the opposite direction, the game may end</p>
+        <p><span style="color: rgb(0, 183, 255);">Known bugs:</span> <br>If you suddenly change direction in <br> the opposite direction, the game may end. <br><br>Music disappear after reloading page.</p>
       </div>
   </div>
     <script src="js/jquery-3.6.0.min.js"></script>
