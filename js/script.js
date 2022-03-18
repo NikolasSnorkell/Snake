@@ -99,7 +99,7 @@ storage();
                 let name = e.target.id;
             
                 name = name.slice(3,)
-            console.log(name);
+            // console.log(name);
               
                 if(start==0){
                   snake();
@@ -333,7 +333,7 @@ function keys(code){
 
               alert("Game over");
               fail=0;
-              sLength=3;
+              sLength=5;
               food=0;
               start=0;
               speed = 25;
