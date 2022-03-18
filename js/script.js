@@ -1,12 +1,12 @@
 
 
-    let backaudio = document.getElementById("back_sound");
-    backaudio.volume = 0.5;
+
+    let backsound = new Audio("sounds/back.mp3");
+    backsound.canPlayType('audio/mp3');
+    backsound.loop = "true";
 
 
-
-
-
+ 
 
 
 let row_max = 15;
@@ -45,20 +45,20 @@ let new_record = new Audio('sounds/new_record.mp3');
 
 
 
-
 $(".image_volume").click(function(){
 
-  if($(this).attr("src")=="images/sound_on.png") {
-     $(this).attr("src","images/sound_off.png");
-     backaudio.volume = 0;
-      // if(this.id=="image_music"){
-      //   audio.volume = 0;
-      // }
+            if($(this).attr("src")=="images/sound_on.png") {
+              $(this).attr("src","images/sound_off.png");
+              backsound.volume = 0;
+                // if(this.id=="image_music"){
+                //   audio.volume = 0;
+                // }
 
-  } else {
-    $(this).attr("src","images/sound_on.png");
-    backaudio.volume = 0.5;
-  }
+            } else {
+              $(this).attr("src","images/sound_on.png");
+              backsound.volume = 0.5;
+              backsound.play();
+            }
 
 
 
