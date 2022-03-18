@@ -17,6 +17,7 @@ body{
     margin: 0;
     padding: 0;
     background: rgb(90, 90, 90);
+    overflow-x: hidden;
 }
 
 #total_cont{
@@ -60,10 +61,13 @@ body{
 
 #info{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
+  
     width: 480px;
    
 }
+
+
 
 #count_points{
     width: 45%;
@@ -71,6 +75,7 @@ body{
     padding: 0;
     color: white;
     font-size: 3rem;
+    padding-left: 1rem;
 }
 
 #timing{
@@ -78,6 +83,8 @@ body{
     padding: 0;
     color: white;
     font-size: 3rem;
+ 
+    padding-right: 2rem;
 }
 
 #description{
@@ -139,6 +146,30 @@ body{
     width: 100%;
 }
 
+@media screen and (max-width:992px){
+
+
+    #description{
+        font-size: 1.5rem;
+    }
+
+    #description img{
+   
+        width: 200px;
+}
+
+}
+
+@media screen and (max-width:870px){
+
+
+    #total_cont{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+
 
 @media screen and (max-width:786px){
         #total_cont{
@@ -172,15 +203,15 @@ body{
  
 
     .container{
-        width: 400px;
+        width: 370px;
         height: 400px;
         margin: 0 auto;
     }
 
     .check{
        
-        width: 19px;
-        height: 19px
+        width: 17px;
+        height: 17px
     }
     #info{
         width: 80%;
