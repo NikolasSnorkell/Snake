@@ -35,7 +35,7 @@ let current_row = 7, // current position vertical
         
 let timing0; // output string for timer
 let secondMer, move; // intervals
-let record_point=0, record_time="0:00:000";
+let record_point=0, record_time="0:00:0";
 
 
 let game_over_sound = new Audio('sounds/game_over.mp3');
@@ -314,8 +314,8 @@ function keys(code){
                     }
                   
                   
-                  if(seconds<10)  timing0="0"+minutes+":0"+seconds+":"+milliseconds+"00";
-                  else timing0="0"+minutes+":"+seconds+":"+milliseconds+"00";
+                  if(seconds<10)  timing0=minutes+":0"+seconds+":"+milliseconds;
+                  else timing0=minutes+":"+seconds+":"+milliseconds;
 
                     $("#timing").html(timing0);
                   
